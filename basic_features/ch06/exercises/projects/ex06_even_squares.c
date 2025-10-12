@@ -10,10 +10,8 @@ int main(void) {
 
     printf("\n");
 
-    for (i = 1; i * i <= n; i++) {
-        if ((i * i) % 2 == 0)
-            printf("%d\n", i * i);
-    }
-
+    for (i = 2; i * i <= n; i += 2)
+        printf("%d\n", i * i);
+        
     return 0;
 }
